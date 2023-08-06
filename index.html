@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- webfont -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- end webfont -->
+    <!-- style -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- end style -->
+</head>
+<body>
+
+    <div class="container">
+        <form action="">
+            <div class="form-group">
+                <input class="form-control" type="text" name="titleTask" placeholder="type your task" id="task-title" >
+                <input class="btn btn-success disabled" type="submit" name="addTask" id="submit-task" value="Add Task">
+            </div>
+        </form>
+
+        <div id="tasks-list" class="tasks">
+            <div class="task-item text-danger task-item-zero d-none">Not Have Any Tasks !!! </div>
+        </div>
+    </div>
+
+
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

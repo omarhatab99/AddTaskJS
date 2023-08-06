@@ -1,0 +1,58 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rajdhani', sans-serif;
+}
+
+form {
+    background-color: #EEE;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+form .form-group {
+    display: flex;
+}
+
+form .form-group input[type="submit"] {
+    margin-left: 20px;
+}
+
+.tasks {
+    background-color: #EEE;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.tasks .task-item {
+    background-color: #FFF;
+    border: 1px dashed rgba(250, 24, 24, 0.815);
+    padding: 15px 20px;
+    display: flex;
+    border-radius: 5px;
+    justify-content: space-between;
+    margin-top: 15px;
+    opacity: 0;
+    transform: scale(0.7);
+    animation: animate 0.3s ease forwards;
+    
+}
+
+.tasks .task-item-zero {
+    border: 1px dashed rgb(216, 216, 8);
+    opacity: 1;
+    transform: scale(1);
+}
+
+@keyframes animate {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
